@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calc — Desk Calculator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="stage">
+  <div class="calc" id="calc">
+
+    <div class="calc__brand">
+      <span class="calc__brand-name">CALC</span>
+      <span class="calc__brand-model">MODEL 01 · SOLAR</span>
+    </div>
+
+    <div class="screen">
+      <div class="screen__inner">
+        <div class="screen__expr" id="expr">&nbsp;</div>
+        <div class="screen__main" id="display">0</div>
+      </div>
+      <div class="screen__sheen" aria-hidden="true"></div>
+    </div>
+
+    <div class="keys" id="keys">
+      <button class="key key--fn" data-action="clear">AC</button>
+      <button class="key key--fn" data-action="backspace">⌫</button>
+      <button class="key key--fn" data-action="percent">%</button>
+      <button class="key key--op" data-action="operator" data-op="÷">÷</button>
+
+      <button class="key key--num" data-action="number" data-num="7">7</button>
+      <button class="key key--num" data-action="number" data-num="8">8</button>
+      <button class="key key--num" data-action="number" data-num="9">9</button>
+      <button class="key key--op" data-action="operator" data-op="×">×</button>
+
+      <button class="key key--num" data-action="number" data-num="4">4</button>
+      <button class="key key--num" data-action="number" data-num="5">5</button>
+      <button class="key key--num" data-action="number" data-num="6">6</button>
+      <button class="key key--op" data-action="operator" data-op="−">−</button>
+
+      <button class="key key--num" data-action="number" data-num="1">1</button>
+      <button class="key key--num" data-action="number" data-num="2">2</button>
+      <button class="key key--num" data-action="number" data-num="3">3</button>
+      <button class="key key--op" data-action="operator" data-op="+">+</button>
+
+      <button class="key key--num key--zero" data-action="number" data-num="0">0</button>
+      <button class="key key--num" data-action="decimal">.</button>
+      <button class="key key--eq" data-action="equals">=</button>
+    </div>
+  </div>
+
+  <p class="hint">Keyboard works too — numbers, + − * /, Enter, Backspace, Esc</p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yash Bhirud — Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAV (IDE TAB BAR) ===== -->
+<header class="tabbar">
+  <div class="tabbar__brand">
+    <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+    <span class="brand-name">yashbhirud.dev</span>
+  </div>
+  <nav class="tabbar__tabs">
+    <a href="#about" class="tab">about.md</a>
+    <a href="#skills" class="tab">skills.json</a>
+    <a href="#projects" class="tab">projects.js</a>
+    <a href="#resume" class="tab">resume.pdf</a>
+    <a href="#contact" class="tab tab--accent">contact.sh</a>
+  </nav>
+  <button class="navtoggle" id="navToggle" aria-label="Toggle menu">☰</button>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <div class="terminal">
+      <div class="terminal__bar">
+        <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+        <span class="terminal__title">bash — zsh</span>
+      </div>
+      <div class="terminal__body" id="terminalBody">
+        <p class="line"><span class="prompt">yash@dev</span><span class="path">~</span><span class="dollar">$</span> <span class="typed" id="typedLine"></span><span class="cursor">▌</span></p>
+        <div id="terminalOutput"></div>
+      </div>
+    </div>
+
+    <div class="hero__copy">
+      <p class="eyebrow">// full-stack developer · data science undergrad · AI enthusiast</p>
+      <h1>I build things that<br><span class="accent">run, scale,</span><br>and ship.</h1>
+      <p class="hero__sub">B.Tech CSE (Data Science) student who turns rough ideas into working full-stack products — from AI-powered lost-and-found platforms to hospital management systems.</p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View Projects →</a>
+        <a href="#resume" class="btn btn--ghost">Download Résumé</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+  <div class="pane">
+    <div class="pane__header">
+      <span class="pane__filename">about.md</span>
+      <span class="pane__lang">Markdown</span>
+    </div>
+    <div class="pane__body about__grid">
+      <div class="about__photo">
+        <div class="photo-frame">
+          <img src="about-photo.jpg" alt="Yash Bhirud" class="photo-frame__img">
+        </div>
+        <div class="badge-row">
+          <span class="badge">🎓 VCET · CGPA 8.0</span>
+          <span class="badge">📍 Mumbai, India</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <h2><span class="linenum">01</span> Who I am</h2>
+        <p>I'm Yash Bhirud, a Computer Science &amp; Engineering (Data Science) undergrad at Vidyavardhini's College of Engineering &amp; Technology. I like projects that force me to touch the whole stack — designing the schema, wiring the AI model in, and making the UI feel like it was worth the effort.</p>
+        <p>Most recently I built <strong>FindIt</strong>, a campus lost-and-found platform that uses TensorFlow.js and OpenCV.js to verify ownership through real photo matching — and <strong>MedEase</strong>, a hospital management system covering patient records, billing, and role-based dashboards.</p>
+        <h2><span class="linenum">02</span> How I work</h2>
+        <p>Comfortable moving between frontend polish and backend plumbing — wiring a TensorFlow model one hour, tuning CSS grid alignment the next. I default to shipping a working version first, then iterating.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section section--alt" id="skills">
+  <div class="pane">
+    <div class="pane__header">
+      <span class="pane__filename">skills.json</span>
+      <span class="pane__lang">JSON</span>
+    </div>
+    <div class="pane__body">
+      <div class="skills__grid">
+
+        <div class="skillcard">
+          <h3>"frontend"</h3>
+          <ul>
+            <li>JavaScript (ES6+), HTML5, CSS3</li>
+            <li>DOM Manipulation, Canvas API</li>
+            <li>CSS Grid &amp; Flexbox, Responsive Design</li>
+            <li>Dark/Light Theme Toggle</li>
+          </ul>
+        </div>
+
+        <div class="skillcard">
+          <h3>"ai_ml"</h3>
+          <ul>
+            <li>TensorFlow.js, MobileNet v2</li>
+            <li>OpenCV.js, ORB Feature Matching</li>
+            <li>BFMatcher (Hamming distance)</li>
+            <li>KeyPoint Detection</li>
+          </ul>
+        </div>
+
+        <div class="skillcard">
+          <h3>"backend_db"</h3>
+          <ul>
+            <li>Node.js, REST APIs</li>
+            <li>MySQL, MongoDB, Firebase</li>
+            <li>Python, SQL</li>
+            <li>Role-Based Access Control (RBAC)</li>
+          </ul>
+        </div>
+
+        <div class="skillcard">
+          <h3>"tooling"</h3>
+          <ul>
+            <li>Git &amp; GitHub, VS Code, npm</li>
+            <li>Async/Await, Promise chaining</li>
+            <li>LocalStorage, FileReader API</li>
+            <li>CDN integration (TF.js, OpenCV)</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section" id="projects">
+  <div class="pane">
+    <div class="pane__header">
+      <span class="pane__filename">projects.js</span>
+      <span class="pane__lang">JavaScript</span>
+    </div>
+    <div class="pane__body">
+      <p class="section__lede"><span class="linenum">const</span> projects = [ … ]  <span class="comment">// click a card to expand</span></p>
+
+      <div class="projects__grid">
+
+        <article class="projectcard">
+          <div class="projectcard__top">
+            <span class="projectcard__tag">AI · full-stack</span>
+            <span class="projectcard__status">shipped</span>
+          </div>
+          <div class="projectcard__thumb projectcard__thumb--findit" aria-hidden="true">
+            <span>🔍</span>
+          </div>
+          <h3>FindIt</h3>
+          <p>AI-powered campus lost &amp; found platform. TensorFlow.js (MobileNet v2) auto-classifies uploaded photos, while OpenCV.js ORB feature matching verifies ownership via image similarity across multiple photos.</p>
+          <ul class="projectcard__stack">
+            <li>HTML5</li><li>CSS3</li><li>Vanilla JS</li><li>TensorFlow.js</li><li>OpenCV.js</li>
+          </ul>
+          <div class="projectcard__links">
+            <a href="https://github.com/yash-code123" class="link" target="_blank" rel="noopener">Source</a>
+          </div>
+        </article>
+
+        <article class="projectcard">
+          <div class="projectcard__top">
+            <span class="projectcard__tag">full-stack</span>
+            <span class="projectcard__status">shipped</span>
+          </div>
+          <div class="projectcard__thumb projectcard__thumb--medease" aria-hidden="true">
+            <span>🏥</span>
+          </div>
+          <h3>MedEase</h3>
+          <p>Integrated Hospital Management System covering patient registration, appointment scheduling, billing &amp; insurance claims, and role-based dashboards for patients, doctors, and admin staff.</p>
+          <ul class="projectcard__stack">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>MySQL</li>
+          </ul>
+          <div class="projectcard__links">
+            <a href="https://github.com/yash-code123" class="link" target="_blank" rel="noopener">Source</a>
+          </div>
+        </article>
+
+        <article class="projectcard">
+          <div class="projectcard__top">
+            <span class="projectcard__tag">certifications</span>
+            <span class="projectcard__status">verified</span>
+          </div>
+          <div class="projectcard__thumb projectcard__thumb--erd" aria-hidden="true">
+            <span>📜</span>
+          </div>
+          <h3>Credentials</h3>
+          <p>SQL (Advanced &amp; Basic) from HackerRank, plus MongoDB Python Developer Path and CRUD Operations in MongoDB from MongoDB, Inc.</p>
+          <ul class="projectcard__stack">
+            <li>HackerRank</li><li>MongoDB Inc.</li>
+          </ul>
+          <div class="projectcard__links">
+            <a href="https://www.linkedin.com/in/yash-bhirud-680817358" class="link" target="_blank" rel="noopener">View on LinkedIn</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RESUME ===== -->
+<section class="section section--alt" id="resume">
+  <div class="pane">
+    <div class="pane__header">
+      <span class="pane__filename">resume.pdf</span>
+      <span class="pane__lang">PDF</span>
+    </div>
+    <div class="pane__body resume__body">
+      <div class="resume__copy">
+        <h2>Want the full breakdown?</h2>
+        <p>One-page résumé covering my project work, technical skill set, and academic background — formatted for quick scanning.</p>
+        <a href="Yash_Bhirud_Resume.pdf" class="btn btn--primary" download="Yash_Bhirud_Resume.pdf">⬇ Download Résumé (PDF)</a>
+      </div>
+      <div class="resume__preview" aria-hidden="true">
+        <div class="resume__preview-line" style="width:60%"></div>
+        <div class="resume__preview-line" style="width:90%"></div>
+        <div class="resume__preview-line" style="width:75%"></div>
+        <div class="resume__preview-line" style="width:85%"></div>
+        <div class="resume__preview-line" style="width:40%"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section" id="contact">
+  <div class="pane">
+    <div class="pane__header">
+      <span class="pane__filename">contact.sh</span>
+      <span class="pane__lang">Shell</span>
+    </div>
+    <div class="pane__body contact__body">
+      <p class="contact__lede"><span class="prompt">~</span><span class="dollar">$</span> ./reach_out --to yash</p>
+      <div class="contact__grid">
+        <a href="mailto:yashbhirud19@gmail.com" class="contact__item">
+          <span class="contact__icon">✉</span>
+          <span>
+            <strong>Email</strong>
+            <small>yashbhirud19@gmail.com</small>
+          </span>
+        </a>
+        <a href="https://github.com/yash-code123" class="contact__item" target="_blank" rel="noopener">
+          <span class="contact__icon">🔗</span>
+          <span>
+            <strong>GitHub</strong>
+            <small>github.com/yash-code123</small>
+          </span>
+        </a>
+        <a href="https://www.linkedin.com/in/yash-bhirud-680817358" class="contact__item" target="_blank" rel="noopener">
+          <span class="contact__icon">💼</span>
+          <span>
+            <strong>LinkedIn</strong>
+            <small>linkedin.com/in/yash-bhirud-680817358</small>
+          </span>
+        </a>
+        <a href="tel:+919405010442" class="contact__item">
+          <span class="contact__icon">📞</span>
+          <span>
+            <strong>Phone</strong>
+            <small>+91 94050 10442</small>
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Yash Bhirud. Built with HTML, CSS &amp; JavaScript — no frameworks.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

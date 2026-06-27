@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loopline — Tasks that actually move</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a href="#top" class="logo">Loopline<span class="logo__dot">.</span></a>
+    <nav class="nav__links">
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <a href="#signup" class="btn btn--small">Start free</a>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero__inner">
+    <div class="hero__copy">
+      <span class="eyebrow">Project tracking, minus the meetings</span>
+      <h1>Give every task<br>somewhere to <em>go</em>.</h1>
+      <p class="hero__sub">Loopline turns scattered to-dos into a clear, visible pipeline — so your team always knows what's next, what's stuck, and what just shipped.</p>
+      <div class="hero__cta">
+        <a href="#signup" class="btn btn--primary">Start free →</a>
+        <a href="#how" class="btn btn--text">See how it works</a>
+      </div>
+      <p class="hero__note">No credit card. Live board in under 60 seconds.</p>
+    </div>
+
+    <div class="hero__stack" aria-hidden="true">
+      <div class="card card--1">
+        <span class="card__tag card__tag--blocked">Blocked</span>
+        <p>Waiting on design review</p>
+        <div class="card__foot"><span class="avatar">RA</span><span class="card__due">Tue</span></div>
+      </div>
+      <div class="card card--2">
+        <span class="card__tag card__tag--progress">In progress</span>
+        <p>Wire up checkout API</p>
+        <div class="card__foot"><span class="avatar avatar--2">SK</span><span class="card__due">Today</span></div>
+      </div>
+      <div class="card card--3">
+        <span class="card__tag card__tag--done">Done</span>
+        <p>Ship onboarding redesign</p>
+        <div class="card__foot"><span class="avatar avatar--3">BP</span><span class="card__due">✓</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOGOS / SOCIAL PROOF STRIP ===== -->
+<section class="strip">
+  <p>Trusted by teams who'd rather build than babysit a spreadsheet</p>
+  <div class="strip__row">
+    <span>NIMBUS</span><span>FORGEWORKS</span><span>PALETTE&amp;CO</span><span>RUNWAY LABS</span><span>HATCHLINE</span>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="how" id="how">
+  <h2 class="section__heading">From idea to done, in three moves</h2>
+
+  <div class="how__grid">
+    <div class="how__step">
+      <span class="how__mark">Capture</span>
+      <h3>Drop the task in</h3>
+      <p>Type it, paste it, forward an email — Loopline turns it into a card before you've context-switched away.</p>
+    </div>
+    <div class="how__step">
+      <span class="how__mark">Move</span>
+      <h3>Drag it forward</h3>
+      <p>One board, one glance. Backlog → In progress → Review → Done. No status meeting required.</p>
+    </div>
+    <div class="how__step">
+      <span class="how__mark">Ship</span>
+      <h3>Close the loop</h3>
+      <p>Done cards notify the right people automatically, so nothing quietly falls through.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES ===== -->
+<section class="features" id="features">
+  <h2 class="section__heading">Built for teams who hate clutter</h2>
+
+  <div class="features__grid">
+    <div class="feature feature--big">
+      <h3>One board, zero noise</h3>
+      <p>Every project gets a single board. No nested folders, no five-click navigation — just the work, visible.</p>
+    </div>
+    <div class="feature">
+      <h3>Smart deadlines</h3>
+      <p>Loopline flags cards that are about to slip before they actually do.</p>
+    </div>
+    <div class="feature">
+      <h3>Real-time sync</h3>
+      <p>Move a card and your whole team sees it move — instantly, no refresh.</p>
+    </div>
+    <div class="feature">
+      <h3>Built-in comments</h3>
+      <p>Discuss the task on the card itself. Context never leaves the work.</p>
+    </div>
+    <div class="feature">
+      <h3>Mobile-first</h3>
+      <p>Update a task from your phone as easily as from your desk.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section class="pricing" id="pricing">
+  <h2 class="section__heading">Simple pricing. No seat tax tricks.</h2>
+  <p class="pricing__sub">Start free. Upgrade only when your team actually needs more.</p>
+
+  <div class="pricing__grid">
+    <div class="plan">
+      <h3>Free</h3>
+      <p class="plan__price">₹0<span>/forever</span></p>
+      <ul>
+        <li>Up to 3 boards</li>
+        <li>Unlimited tasks</li>
+        <li>Up to 5 teammates</li>
+      </ul>
+      <a href="#signup" class="btn btn--outline">Start free</a>
+    </div>
+    <div class="plan plan--highlight">
+      <span class="plan__badge">Most popular</span>
+      <h3>Team</h3>
+      <p class="plan__price">₹399<span>/user/mo</span></p>
+      <ul>
+        <li>Unlimited boards</li>
+        <li>Deadline alerts</li>
+        <li>Priority support</li>
+      </ul>
+      <a href="#signup" class="btn btn--primary">Start free trial</a>
+    </div>
+    <div class="plan">
+      <h3>Scale</h3>
+      <p class="plan__price">Custom</p>
+      <ul>
+        <li>SSO &amp; permissions</li>
+        <li>Dedicated onboarding</li>
+        <li>Usage analytics</li>
+      </ul>
+      <a href="#signup" class="btn btn--outline">Talk to us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SIGNUP / CTA ===== -->
+<section class="signup" id="signup">
+  <div class="signup__inner">
+    <h2>Your next task is already waiting.</h2>
+    <p>Get a board running before your coffee goes cold.</p>
+    <form class="signup__form" id="signupForm">
+      <input type="email" placeholder="you@work.com" required aria-label="Work email">
+      <button type="submit" class="btn btn--primary">Create my board</button>
+    </form>
+    <p class="signup__status" id="signupStatus" role="status"></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span class="logo">Loopline<span class="logo__dot">.</span></span>
+    <p>© <span id="year"></span> Loopline. Built with HTML, CSS &amp; JavaScript.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
